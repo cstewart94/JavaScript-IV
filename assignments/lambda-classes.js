@@ -52,9 +52,9 @@ class ProjectManager extends Instructor{
     this.favInstructor=PMAttributes.favInstructor
   }
   standUp(channel){
-    return`${this.name} announces to {channel}, @channel standy times!`
+    return`${this.name} announces to ${channel}, @channel standy times!`
   }
-  debugsCode(subject){`${this.name} debugs {student.name}'s code on {subject}'`
+  debugsCode(subject){`${this.name} debugs ${Student.name}'s code on ${subject}'`
   }
 }
 
@@ -101,3 +101,5 @@ console.log(instructorOne.grade(studentOne, 'JavaScript'));
 console.log(pManagerOne.speak());
 console.log(studentOne.listsSubjects());
 console.log(studentOne.PRAssignment('JavaScript IV'));
+console.log(studentOne.sprintChallenge('JavaScript Fundamentals'));
+console.log(pManagerOne.standUp('WEB25'));
